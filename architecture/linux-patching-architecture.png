@@ -1,0 +1,42 @@
+                 SERVER OWNER
+                      |
+                      v
+                +------------+
+                | IT PORTAL  |
+                +-----+------+
+                      |
+                Discover Servers
+                Select Server
+                Start Patching
+                      |
+                      v
+          +-----------------------+
+          | PATCH AUTOMATION      |
+          +-----------+-----------+
+                      |
+                      v
+          +-----------------------+
+          | CENTRAL REPOSITORY    |
+          | Repositor.io           |
+          +-----------+-----------+
+                      |
+              +-------+-------+
+              |       |       |
+             RHEL  AlmaLinux Ubuntu
+              |       |       |
+              +-------+-------+
+                      |
+                      v
+                Patch Server
+                      |
+              Reboot if Required
+                      |
+                      v
+              Post-Patch Check
+                 /         \
+                /           \
+          SUCCESS           FAILURE
+             |                 |
+             v                 +---------> OPS Email
+       Owner Email             |
+                               +---------> Incident
